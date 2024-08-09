@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Library Assignment</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+
+<body>
+    <div id="container">
+        <form id="form">
+            <label for="title" class="label">Title: </label>
+            <input id="title" class="input">
+
+            <label for="author" class="label">Author: </label>
+            <input id="author" class="input">
+
+            <label for="pages" class="label">Pages: </label>
+            <input id="pages" class="input">
+
+            <label for="read" class="label">Read: </label>
+            <input id="read" class="input">
+
+            <button id="addButton" type="submit">Add To Your Library!</button>
+        </form>
+    </div>
+    <h2 id="yourLibraryText">Your Library!</h2>
+    <div id="libraryBookCardsContainer">
+        <div id="bookOne" class="bookCard">
+            <button class="readButton" type="button">A</button>
+            <button class="deleteButton" type="button"><strong>X</strong></button>
+            <p class="bookTitles"><strong>Title: </strong>The Hobbit</p>
+            <p class="bookAuthors"><strong>Author: </strong>J.R.R. Tolkien</p>
+            <p class="bookPages"><strong>Pages: </strong>295</p>
+            <p class="bookRead"><strong>Read: </strong>no</p>
+        </div>
+        <div id="bookTwo" class="bookCard">
+            <button class="readButton" type="button">✔️</button>
+            <button class="deleteButton" type="button"><strong>X</strong></button>
+            <p class="bookTitles"><strong>Title: </strong>Savage Son</p>
+            <p class="bookAuthors"><strong>Author: </strong>Jack Carr</p>
+            <p class="bookPages"><strong>Pages: </strong>400</p>
+            <p class="bookRead"><strong>Read: </strong>yes</p>
+        </div>
+        <div id="bookThree" class="bookCard">
+            <button class="readButton" type="button">A</button>
+            <button class="deleteButton" type="button"><strong>X</strong></button>
+            <p class="bookTitles"><strong>Title: </strong>Only The Dead</p>
+            <p class="bookAuthors"><strong>Author: </strong>Jack Carr</p>
+            <p class="bookPages"><strong>Pages: </strong>350</p>
+            <p class="bookRead"><strong>Read: </strong>yes</p>
+        </div>
+        <div id="bookFour" class="bookCard">
+            <button class="readButton" type="button">A</button>
+            <button class="deleteButton" type="button"><strong>X</strong></button>
+            <p class="bookTitles"><strong>Title: </strong>Red Sky Mourning</p>
+            <p class="bookAuthors"><strong>Author: </strong>Jack Carr</p>
+            <p class="bookPages"><strong>Pages: </strong>450</p>
+            <p class="bookRead"><strong>Read: </strong>yes</p>
+        </div>
+    </div>
+    <script src="library.js"></script>
+</body>
+
+</html>

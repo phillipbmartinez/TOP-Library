@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+}
+
+#container {
+    display: grid;
+    margin: auto;
+    width: 25%;
+    height: 50%;
+    text-align: center;
+    box-shadow: 3px 3px 10px #0d6efd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input {
+    border-radius: 10px;
+    border: none;
+    background-color: lightgray;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsla(216, 98%, 52%, 70%);
+    transition: box-shadow 0.2s ease;
+}
+
+#addButton {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: hsl(216, 98%, 52%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+#addButton:hover {
+    background-color: hsl(216, 98%, 65%);
+    cursor: pointer;
+}
+
+#yourLibraryText {
+    text-align: center;
+}
+
+#libraryBookCardsContainer {
+    font-family: sans-serif;
+    text-align: center;
+    box-shadow: 3px 3px 10px #0d6efd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.bookCard {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    grid-template-rows: repeat(5, auto);
+    box-shadow: 3px 3px 10px #0d6efd;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bookCard p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bookTitles {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.bookAuthors {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.bookPages {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.bookRead {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.deleteButton {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: right;
+    align-content: center;
+    padding: 3px;
+    border: none;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: hsl(0, 100%, 50%);
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: hsl(0, 100%, 65%);
+    cursor: pointer;
+}
+
+.readButton {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: right;
+    align-content: center;
+    padding: 3px;
+    border: none;
+    margin-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: hsl(216, 98%, 52%);
+    color: white;
+}
+
+.readButton:hover {
+    background-color: hsl(216, 98%, 65%);
+    cursor: pointer;
+}
