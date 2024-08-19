@@ -47,8 +47,16 @@ function addBookToLibrary() {
     const pages = pagesInput.value;
     const read = readInput.value.toLowerCase();
 
-    if (title === "" || author === "" || pages === "" || read === "") {
+    if (title === "" && author === "" && pages === "" && read === "") {
         alert("All fields required.")
+    } else if (title === "" || title === null) {
+        alert('Missing "Title" field.')
+    } else if (author === "" || author === null) {
+        alert('Missing "Author" field.')
+    } else if (pages === "" || pages === null) {
+        alert('Missing "Pages" field.')
+    } else if (read === "" || read === null) {
+        alert('Missing "Read" field.')
     } else {
         const newBook = new Book(title, author, pages, read);
         myLibrary.push(newBook);
