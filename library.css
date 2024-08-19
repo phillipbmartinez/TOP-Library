@@ -162,3 +162,7 @@ body {
     background-color: hsl(216, 98%, 65%);
     cursor: pointer;
 }
+
+input:invalid {
+    border: 2px dashed red;
+  }

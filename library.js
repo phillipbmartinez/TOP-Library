@@ -47,18 +47,22 @@ function addBookToLibrary() {
     const pages = pagesInput.value;
     const read = readInput.value.toLowerCase();
 
-    const newBook = new Book(title, author, pages, read);
-    myLibrary.push(newBook);
-
-    // Create and add the book card
-    const newBookCard = createBookCard(newBook);
-    libraryBookCardsContainer.appendChild(newBookCard);
-
-    // Clear input fields
-    titleInput.value = "";
-    authorInput.value = "";
-    pagesInput.value = "";
-    readInput.value = "";
+    if (title === "" || author === "" || pages === "" || read === "") {
+        alert("All fields required.")
+    } else {
+        const newBook = new Book(title, author, pages, read);
+        myLibrary.push(newBook);
+    
+        // Create and add the book card
+        const newBookCard = createBookCard(newBook);
+        libraryBookCardsContainer.appendChild(newBookCard);
+    
+        // Clear input fields
+        titleInput.value = "";
+        authorInput.value = "";
+        pagesInput.value = "";
+        readInput.value = "";
+    }
 }
 
 function createBookCard(book) {
